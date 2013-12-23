@@ -7,6 +7,8 @@ when 'contributors', 'contributors.md'
   Osrcry::Contributors.execute
 when 'license', 'license.md'
   Osrcry::License.execute
+when 'stale'
+  Osrcry::Stale.execute
 else
   puts "Please specify: `contributors` or `license`"
 end

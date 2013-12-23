@@ -9,13 +9,10 @@ module Osrcry
         "#{earliest_year}-#{latest_year}"
       end
 
-      remote = `git remote -v`.split("\n").detect {|line| line =~ /^origin/}
-      user, repo = remote.match(%r{github.com[:\/](\w+)\/(\w+)}).captures
-
       license = <<-LICENSE
 The MIT License (MIT)
 
-Copyright (c) #{year_range} [CONTRIBUTORS.md](https://github.com/#{user}/#{repo}/blob/master/CONTRIBUTORS.md)
+Copyright (c) #{year_range} [CONTRIBUTORS.md](https://github.com/#{Osrcry.user}/#{Osrcry.repo}/blob/master/CONTRIBUTORS.md)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

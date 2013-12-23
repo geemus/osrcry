@@ -26,6 +26,13 @@ To generate an updated CONTRIBUTORS.md:
 
     $ osrcry contributors
 
+To lookup stale issues (years, months, weeks or days old):
+
+    $ osrcry stale years
+    $ osrcry stale months
+    $ osrcry stale weeks
+    $ osrcry stale days
+
 ## Getting Help
 
 <!-- * [General Documentation](http://geemus.github.io/osrcry). -->
