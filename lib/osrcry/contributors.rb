@@ -4,10 +4,10 @@ module Osrcry
       require 'excon'
       require 'json'
 
-      `git remote -v`.split("\n").detect do |remotes|
-        remotes =~ /github.com[:\/](\w+)\/(\w+)/
+      data = `git remote -v`.split("\n").detect do |remote|
+        remote =~ /^origin/
       end
-      user, repo = $1, $2
+      user, repo = data.match(/github.com[:\/](\w+)\/(\w+)/).captures
 
       data = JSON.parse(
         Excon.get(
