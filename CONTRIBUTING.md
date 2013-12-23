@@ -15,8 +15,8 @@ New contributors are always welcome, when it doubt please ask questions. We stri
 ### Non-Coding
 
 * Offer feedback on open [issues](https://github.com/geemus/oscrcy/issues).
-* Write and help edit [documentation](https://github.com/geemus/oscrcy/tree/gh-pages).
-* Translate [documentation](https://github.com/geemus/oscrcy/tree/gh-pages) in to other languages.
+<!-- * Write and help edit [documentation](https://github.com/geemus/oscrcy/tree/gh-pages). -->
+<!-- * Translate [documentation](https://github.com/geemus/oscrcy/tree/gh-pages) in to other languages. -->
 * Organize or volunteer at events.
 * [Donate](https://www.gittip.com/geemus/)!
 * Discuss other ideas for contribution with [geemus](mailto:geemus+oscrcy@gmail.com).

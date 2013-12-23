@@ -28,7 +28,7 @@ To generate an updated COLLABORATORS.md:
 
 ## Getting Help
 
-* [General Documentation](http://geemus.github.io/osrcry).
+<!-- * [General Documentation](http://geemus.github.io/osrcry). -->
 * Ask specific questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/osrcry).
 * Report bugs and discuss potential features in [Github issues](https://github.com/geemus/osrcry/issues).
 
