@@ -3,6 +3,10 @@
 require 'osrcry'
 
 case ARGV.first.downcase
+when 'contributors', 'contributors.md'
+  Osrcry::Contributors.execute
 when 'license', 'license.md'
   Osrcry::License.execute
+else
+  puts "Please specify: `contributors` or `license`"
 end

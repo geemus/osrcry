@@ -18,11 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To generate an updated LICENSE.md (will update year-range of copyright if needed):
+
+    $ osrcry license
+
+To generate an updated COLLABORATORS.md:
+
+    $ osrcry colloborators
 
 ## Getting Help
 
-* [General Documentation](http://osrcry.github.io).
+* [General Documentation](http://geemus.github.io/osrcry).
 * Ask specific questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/osrcry).
 * Report bugs and discuss potential features in [Github issues](https://github.com/geemus/osrcry/issues).
 

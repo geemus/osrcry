@@ -1,3 +1,4 @@
+require "osrcry/contributors"
 require "osrcry/license"
 require "osrcry/version"
 
