@@ -1,3 +1,4 @@
+require "osrcry/license"
 require "osrcry/version"
 
 module Osrcry

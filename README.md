@@ -20,10 +20,16 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+## Getting Help
+
+* [General Documentation](http://osrcry.github.io).
+* Ask specific questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/osrcry).
+* Report bugs and discuss potential features in [Github issues](https://github.com/geemus/osrcry/issues).
+
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Please refer to [CONTRIBUTING.md](https://github.com/geemus/osrcry/blob/master/CONTRIBUTING.md).
+
+## License
+
+Please refer to [LICENSE.md](https://github.com/geemus/osrcry/blob/master/LICENSE.md).
