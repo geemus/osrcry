@@ -2,11 +2,11 @@ module Osrcry
   class License
     def self.execute
       unix_times = `git log --pretty=format:"%at"`.split("\n")
-      first_year, last_year = Time.at(unix_times.first.to_i).utc.year, Time.at(unix_times.last.to_i).utc.year
-      year_range = if first_year == last_year
-        first_year.to_s
+      latest_year, earliest_year = Time.at(unix_times.first.to_i).utc.year, Time.at(unix_times.last.to_i).utc.year
+      year_range = if latest_year == earliest_year
+        latest_year.to_s
       else
-        "#{first_year}-#{last_year}"
+        "#{earliest_year}-#{latest_year}"
       end
 
       license = <<-LICENSE
