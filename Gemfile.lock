@@ -2,12 +2,10 @@ PATH
   remote: .
   specs:
     osrcry (0.0.1)
-      excon
 
 GEM
   remote: https://rubygems.org/
   specs:
-    excon (0.31.0)
     rake (10.1.0)
 
 PLATFORMS

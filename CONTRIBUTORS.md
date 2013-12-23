@@ -1,1 +1,2 @@
-[geemus](https://github.com/geemus)
+* [Wesley Beary](mailto:geemus+github@gmail.com)
+* [geemus](mailto:geemus@gmail.com)
