@@ -22,9 +22,9 @@ To generate an updated LICENSE.md (will update year-range of copyright if needed
 
     $ osrcry license
 
-To generate an updated COLLABORATORS.md:
+To generate an updated CONTRIBUTORS.md:
 
-    $ osrcry colloborators
+    $ osrcry contributors
 
 ## Getting Help
 
