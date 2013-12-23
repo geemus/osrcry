@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'osrcry'
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'osrcry'))
 
 case ARGV.first.downcase
 when 'contributors', 'contributors.md'
