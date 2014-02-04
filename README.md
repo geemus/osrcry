@@ -22,7 +22,11 @@ To generate an updated LICENSE.md (will update year-range of copyright if needed
 
     $ osrcry license
 
-To generate an updated CONTRIBUTORS.md:
+To generate a default CONTRIBUTING.md:
+
+    $ osrcry contributing
+
+To generate an up to date CONTRIBUTORS.md:
 
     $ osrcry contributors
 

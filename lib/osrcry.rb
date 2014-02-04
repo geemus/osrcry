@@ -1,4 +1,5 @@
 dir = File.dirname(__FILE__)
+require File.join(dir, 'osrcry', 'contributing')
 require File.join(dir, 'osrcry', 'contributors')
 require File.join(dir, 'osrcry', 'license')
 require File.join(dir, 'osrcry', 'stale')
