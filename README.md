@@ -6,7 +6,7 @@ Open Sourcery - Tools for open source project management.
 
 Add this line to your application's Gemfile:
 
-    gem 'oscrcy'
+    gem 'osrcry'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install oscrcy
+    $ gem install osrcry
 
 ## Usage
 
