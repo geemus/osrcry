@@ -8,13 +8,14 @@ commands = %w{
   contributing.md
   contributors
   contributors.md
+  init
   license
   license.md
   stale
 }
 
 unless arguments.any? {|argument| commands.include?(argument)}
-  puts "Please specify: `contributing`, `contributors`, `license` and/or `stale`"
+  puts "Please specify: `contributing`, `contributors`, `init`, `license` and/or `stale`"
 else
   arguments.each do |command|
     case command
