@@ -1,12 +1,12 @@
 PATH
   remote: .
   specs:
-    osrcry (0.1.0)
+    osrcry (0.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (10.1.0)
+    rake (12.0.0)
 
 PLATFORMS
   ruby
