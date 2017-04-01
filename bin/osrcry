@@ -22,6 +22,10 @@ else
       Osrcry::Contributing.execute
     when 'contributors', 'contributors.md'
       Osrcry::Contributors.execute
+    when 'init'
+      Osrcry::Contributing.execute
+      Osrcry::Contributors.execute
+      Osrcry::License.execute
     when 'license', 'license.md'
       Osrcry::License.execute
     when 'stale'
