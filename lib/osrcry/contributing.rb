@@ -1,6 +1,10 @@
 module Osrcry
   class Contributing
     def self.execute
+      unless Osrcry.remote
+        puts "Unable to create CONTRIBUTING.md due to missing git remote.\nPlease add git remote and try again."
+        return
+      end
 
       contributing = <<-CONTRIBUTING
 ## Getting Involved
