@@ -37,6 +37,8 @@ To lookup stale issues (years, months, weeks or days old):
     $ osrcry stale weeks
     $ osrcry stale days
 
+Additionally, you may list multiple commands to do them all in one command.
+
 ## Getting Help
 
 <!-- * [General Documentation](http://geemus.github.io/osrcry). -->

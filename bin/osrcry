@@ -2,15 +2,30 @@
 
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'osrcry'))
 
-case ARGV.first && ARGV.first.downcase
-when 'contributing', 'contributing.md'
-  Osrcry::Contributing.execute
-when 'contributors', 'contributors.md'
-  Osrcry::Contributors.execute
-when 'license', 'license.md'
-  Osrcry::License.execute
-when 'stale'
-  Osrcry::Stale.execute
+arguments = ARGV.map {|arg| arg.downcase}
+commands = %w{
+  contributing
+  contributing.md
+  contributors
+  contributors.md
+  license
+  license.md
+  stale
+}
+
+unless arguments.any? {|argument| commands.include?(argument)}
+  puts "Please specify: `contributing`, `contributors`, `license` and/or `stale`"
 else
-  puts "Please specify: `contributing`, `contributors`, `license` or `stale`"
+  arguments.each do |command|
+    case command
+    when 'contributing', 'contributing.md'
+      Osrcry::Contributing.execute
+    when 'contributors', 'contributors.md'
+      Osrcry::Contributors.execute
+    when 'license', 'license.md'
+      Osrcry::License.execute
+    when 'stale'
+      Osrcry::Stale.execute
+    end
+  end
 end
