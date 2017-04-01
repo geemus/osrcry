@@ -1,6 +1,11 @@
 module Osrcry
   class License
     def self.execute
+      unless Osrcry.remote
+        puts "Unable to create LICENSE.md due to missing git remote.\nPlease add git remote and try again."
+        return
+      end
+
       unix_times = `git log --pretty=format:"%at"`.split("\n")
       latest_year, earliest_year = Time.at(unix_times.first.to_i).utc.year, Time.at(unix_times.last.to_i).utc.year
       year_range = if latest_year == earliest_year
