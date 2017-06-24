@@ -9,7 +9,7 @@ require File.join(dir, 'osrcry', 'version')
 module Osrcry
 
   def self.email
-    @email ||= `git config user.email`
+    @email ||= ENV['OSRCRY_EMAIL'] || `git config user.email`
   end
 
   def self.remote

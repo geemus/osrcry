@@ -2,7 +2,7 @@ module Osrcry
   class License
     def self.execute
       unless Osrcry.email
-        puts "Unable to create CODE_OF_CONDUCT.md due to missing git user.email.\nPlease add git config user.email and try again."
+        puts "Unable to create CODE_OF_CONDUCT.md due to missing email.\nPlease set ENV['OSRCRY_EMAIL'] or add git config user.email and try again."
         return
       end
 
