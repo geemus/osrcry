@@ -2,17 +2,13 @@
 
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'osrcry'))
 
-arguments = ARGV.map {|arg| arg.downcase}
+arguments = ARGV.map {|arg| arg.downcase.split('.md', 2).first}
 commands = %w{
   code_of_conduct
-  code_of_conduct.md
   contributing
-  contributing.md
   contributors
-  contributors.md
   init
   license
-  license.md
   stale
 }
 
@@ -21,18 +17,18 @@ unless arguments.any? {|argument| commands.include?(argument)}
 else
   arguments.each do |command|
     case command
-    when 'code_of_conduct', 'code_of_conduct.md'
+    when 'code_of_conduct'
       Osrcry::Contributing.execute
-    when 'contributing', 'contributing.md'
+    when 'contributing'
       Osrcry::Contributing.execute
-    when 'contributors', 'contributors.md'
+    when 'contributors'
       Osrcry::Contributors.execute
     when 'init'
       Osrcry::CodeOfConduct.execute
       Osrcry::Contributing.execute
       Osrcry::Contributors.execute
       Osrcry::License.execute
-    when 'license', 'license.md'
+    when 'license'
       Osrcry::License.execute
     when 'stale'
       Osrcry::Stale.execute
