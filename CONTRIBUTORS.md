@@ -1,2 +1,4 @@
-* Wesley Beary <geemus+github@gmail.com>
-* geemus <geemus@gmail.com>
+* Matt Eldridge
+* Wesley Beary
+* dependabot[bot]
+* geemus
